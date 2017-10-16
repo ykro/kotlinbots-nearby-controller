@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:context="com.bitandik.labs.kotlinbots.nearbycontroller.MainActivity">
+
+    <Button
+        android:id="@+id/btnFwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+        android:text="^"/>
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/btnFwd"
+        android:layout_marginEnd="19dp" android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/btnFwd" android:layout_toStartOf="@+id/btnFwd"
+        android:text="&lt;"/>
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/btnFwd"
+        android:layout_marginLeft="28dp" android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/btnFwd" android:layout_toRightOf="@+id/btnFwd"
+        android:text="&gt;"/>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStop" android:layout_toEndOf="@+id/btnLeft"
+        android:layout_toRightOf="@+id/btnLeft"
+        android:text="v"/>
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/btnFwd"
+        android:layout_toEndOf="@+id/btnLeft" android:layout_toRightOf="@+id/btnLeft"
+        android:text="Stop"/>
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" android:layout_marginTop="14dp"
+        android:text=""/>
+
+</RelativeLayout>
